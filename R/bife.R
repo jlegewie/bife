@@ -248,6 +248,7 @@ bife <- function(formula, data = list(),
   result[["logl_info"]][["nobs"]] <- nobs
   result[["logl_info"]][["k"]] <- d + length(mean_y)
   result[["logl_info"]][["events"]] <- events
+  result[["model_info"]] <- list()
   result[["model_info"]][["drop_NA"]] <- length(attr(mf, "na.action"))
   result[["model_info"]][["drop_pc"]] <- nobs - length(index_pc)
   result[["model_info"]][["formula"]] <- formula
